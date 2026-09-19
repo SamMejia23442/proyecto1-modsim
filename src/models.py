@@ -13,6 +13,11 @@ class Usuario:
     def dar_like(self, otro_usuario_id):
         self.likes_dados.add(otro_usuario_id)
         
+    def evaluar_perfil(self, perfil_deseabilidad):
+        # Esta lógica puede depender de la función logística implementada
+        # Importaremos generadores_otros en el módulo principal para conectarlos
+        pass
+        
     def registrar_match(self, otro_usuario_id):
         self.matches.add(otro_usuario_id)
 
