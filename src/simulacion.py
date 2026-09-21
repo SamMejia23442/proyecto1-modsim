@@ -3,7 +3,12 @@ from .generadores_otros import generar_beta, generar_gamma, funcion_logistica, e
 from .generadores_poisson import poisson_producto_uniformes
 
 class MotorSimulacion:
-    def __init__(self, num_usuarios=1000):
+    """
+    Motor central que orquesta la simulación de Tinder.
+    Maneja el estado global de los usuarios, iteraciones temporales
+    y la cola de perfiles.
+    """
+    def __init__(self, num_usuarios: int = 1000):
         self.num_usuarios = num_usuarios
         self.usuarios = {}
         self.tiempo_actual = 0.0
